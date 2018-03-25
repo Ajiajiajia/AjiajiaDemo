@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <com.example.heaijia.ajiajia.widget.FlipperPage
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/flipper_header">
+    </com.example.heaijia.ajiajia.widget.FlipperPage>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txt_qianduan"
+            style="@style/txt_home_module"
+            android:text="Web前端"
+            android:background="@drawable/bg_txt_qianduan"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="6dp"
+            android:layout_marginRight="6dp"
+            />
+
+        <TextView
+            android:id="@+id/txt_houduan"
+            style="@style/txt_home_module"
+            android:background="@drawable/bg_txt_houduan"
+            android:text="后端"
+            android:layout_toRightOf="@id/txt_qianduan"/>
+
+        <TextView
+            android:id="@+id/txt_android"
+            style="@style/txt_home_module"
+            android:text="Android/IOS"
+            android:background="@drawable/bg_txt_android"
+            android:layout_below="@id/txt_qianduan"
+            />
+
+        <TextView
+            android:id="@+id/txt_UI"
+            style="@style/txt_home_module"
+            android:layout_alignLeft="@id/txt_houduan"
+            android:layout_alignTop="@id/txt_android"
+            android:background="@drawable/bg_txt_ui"
+            android:text="UI/产品" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
