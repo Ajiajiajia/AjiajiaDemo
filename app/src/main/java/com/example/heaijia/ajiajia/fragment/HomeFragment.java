@@ -9,10 +9,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.heaijia.ajiajia.R;
-import com.example.heaijia.ajiajia.activity.duanmodel.AndroidActivity;
-import com.example.heaijia.ajiajia.activity.duanmodel.BEActivity;
-import com.example.heaijia.ajiajia.activity.duanmodel.FEActivity;
-import com.example.heaijia.ajiajia.activity.duanmodel.UIActivity;
+import com.example.heaijia.ajiajia.activity.duanmodel.android.AndroidActivity;
+import com.example.heaijia.ajiajia.activity.duanmodel.houduan.BEActivity;
+import com.example.heaijia.ajiajia.activity.duanmodel.qiandaun.FEActivity;
+import com.example.heaijia.ajiajia.activity.duanmodel.ui.UIActivity;
 import com.example.heaijia.ajiajia.base.Activity.BaseFragment;
 import com.example.heaijia.ajiajia.widget.FlipperPage;
 

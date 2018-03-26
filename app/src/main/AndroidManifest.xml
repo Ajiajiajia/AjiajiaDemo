@@ -17,10 +17,10 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activity.duanmodel.AndroidActivity"/>
-        <activity android:name=".activity.duanmodel.UIActivity"/>
-        <activity android:name=".activity.duanmodel.BEActivity"/>
-        <activity android:name=".activity.duanmodel.FEActivity"/>
+        <activity android:name=".activity.duanmodel.android.AndroidActivity"/>
+        <activity android:name=".activity.duanmodel.ui.UIActivity"/>
+        <activity android:name=".activity.duanmodel.houduan.BEActivity"/>
+        <activity android:name=".activity.duanmodel.qiandaun.FEActivity"/>
 
 
 

@@ -1,18 +1,18 @@
-package com.example.heaijia.ajiajia.activity.duanmodel;
+package com.example.heaijia.ajiajia.activity.duanmodel.android;
 
 import com.example.heaijia.ajiajia.R;
 import com.example.heaijia.ajiajia.base.Activity.BaseNoBarActivity;
 
 /**
  * @author heaijia
- * @since 2018/3/25 下午8:26
+ * @since 2018/3/25 下午8:27
  * email 549044363@qq.com
  */
 
-public class FEActivity extends BaseNoBarActivity {
+public class AndroidActivity extends BaseNoBarActivity {
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_fe;
+        return R.layout.activity_android;
     }
 
     @Override

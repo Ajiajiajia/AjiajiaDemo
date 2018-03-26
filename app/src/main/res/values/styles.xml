@@ -19,4 +19,18 @@
     </style>
     
     
+    <!--ToolBar style-->
+    <style name="base_toolbar"
+        parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:paddingTop">25dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:background">@color/txt_white</item>
+        <item name="titleTextColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColorPrimary">@color/txt_white</item>
+    </style>
+    
+    
 </resources>

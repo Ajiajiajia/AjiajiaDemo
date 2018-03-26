@@ -1,5 +1,7 @@
 package com.example.heaijia.ajiajia.fragment;
 
+import android.view.View;
+
 import com.example.heaijia.ajiajia.R;
 import com.example.heaijia.ajiajia.base.Activity.BaseFragment;
 
@@ -31,4 +33,5 @@ public class MineFragment extends BaseFragment {
     protected void loadData() {
 
     }
+
 }
