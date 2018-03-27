@@ -60,6 +60,7 @@ public abstract class BaseToolBarActivity extends BaseActivity{
     private void initToolbar(View root) {
         mToolBar = root.findViewById(R.id.toolbar);
         mToolBar.setTitle(getString(R.string.empty));
+
         //在NoActionBar主题下，用ToolBar代替ActionBar
         setSupportActionBar(mToolBar);
         ActionBar actionBar = getSupportActionBar();
@@ -121,7 +122,7 @@ public abstract class BaseToolBarActivity extends BaseActivity{
      */
     protected void setToolBarMenu(int resId) {
         if(mToolBar != null) {
-            ImageView imageView = mToolBar.findViewById(R.id.img_toolbar_menu);
+            ImageView imageView = mToolBar.findViewById(R.id.img_toolbar_right_top);
             imageView.setImageResource(resId);
         }
     }

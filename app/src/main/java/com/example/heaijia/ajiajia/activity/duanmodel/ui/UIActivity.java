@@ -40,12 +40,14 @@ public class UIActivity extends BaseToolBarActivity{
     private void initToolBar(){
         setActivityTitle("UI and PM");
         setToolBarMenu(R.drawable.ic_search);
-        getToolBar().findViewById(R.id.img_toolbar_menu).setOnClickListener(new View.OnClickListener() {
+        getToolBar().findViewById(R.id.img_toolbar_right_top).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(UIActivity.this,"搜索按钮事件，敬请期待",Toast.LENGTH_SHORT);
             }
         });
     }
+
+
 
 }
