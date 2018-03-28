@@ -38,8 +38,8 @@ public class UIActivity extends BaseToolBarActivity{
     }
 
     private void initToolBar(){
-        setActivityTitle("UI and PM");
-        setToolBarMenu(R.drawable.ic_search);
+        setToolbarTitle("UI and PM");
+        setToolBarRightTop(R.drawable.ic_search);
         getToolBar().findViewById(R.id.img_toolbar_right_top).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

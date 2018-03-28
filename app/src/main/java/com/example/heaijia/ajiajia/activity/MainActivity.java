@@ -1,9 +1,12 @@
 package com.example.heaijia.ajiajia.activity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.heaijia.ajiajia.R;
+import com.example.heaijia.ajiajia.activity.duanmodel.ui.UIActivity;
 import com.example.heaijia.ajiajia.base.Activity.BaseNoBarActivity;
 import com.example.heaijia.ajiajia.fragment.HomeFragment;
 import com.example.heaijia.ajiajia.fragment.MessageFragment;
@@ -154,9 +157,5 @@ public class MainActivity extends BaseNoBarActivity {
         clearChiceStatus();
         mtxtTabMine.setSelected(true);
     }
-
-    /**
-     * 用于
-     */
 
 }

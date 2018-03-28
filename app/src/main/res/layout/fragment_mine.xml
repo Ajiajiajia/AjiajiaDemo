@@ -6,10 +6,21 @@
     android:orientation="vertical">
 
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="个人界面敬请期待"
-        android:gravity="center"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_goto_baidu"
+        android:text="进入百度"
+        android:shadowColor="@color/txt_blue"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn_goto_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="打电话给麻麻"/>
 
 </LinearLayout>

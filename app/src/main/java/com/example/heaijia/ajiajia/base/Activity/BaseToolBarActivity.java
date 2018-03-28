@@ -28,6 +28,30 @@ public abstract class BaseToolBarActivity extends BaseActivity{
     private android.support.v7.widget.Toolbar mToolBar;
     Unbinder unbinder;
 
+
+    /**
+     * 初始化设置toolbar.
+     *
+     * @param root 页面rootView
+     */
+    private void initToolbar(View root) {
+
+        mToolBar = root.findViewById(R.id.toolbar);
+        mToolBar.setTitle(getString(R.string.empty));
+
+        //在NoActionBar主题下，用ToolBar代替ActionBar
+        setSupportActionBar(mToolBar);
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            //设置左上角的图标可以点击
+            actionBar.setHomeButtonEnabled(true);
+            //显示左上角的返回图标
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
+    }
+
+
+
     @Override
     protected void onCreate(@android.support.annotation.Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,25 +76,6 @@ public abstract class BaseToolBarActivity extends BaseActivity{
         return viewRoot;
     }
 
-    /**
-     * 初始化设置toolbar.
-     *
-     * @param root 页面rootView
-     */
-    private void initToolbar(View root) {
-        mToolBar = root.findViewById(R.id.toolbar);
-        mToolBar.setTitle(getString(R.string.empty));
-
-        //在NoActionBar主题下，用ToolBar代替ActionBar
-        setSupportActionBar(mToolBar);
-        ActionBar actionBar = getSupportActionBar();
-        if (actionBar != null) {
-            //设置左上角的图标可以点击
-            actionBar.setHomeButtonEnabled(true);
-            //显示左上角的返回图标
-            actionBar.setDisplayHomeAsUpEnabled(true);
-        }
-    }
 
 
     /**
@@ -106,7 +111,7 @@ public abstract class BaseToolBarActivity extends BaseActivity{
      *
      * @param charSequence 页面标题
      */
-    protected void setActivityTitle(CharSequence charSequence) {
+    protected void setToolbarTitle(CharSequence charSequence) {
         if (mToolBar != null) {
 
             TextView view = mToolBar.findViewById(R.id.txt_toolbar_title);
@@ -120,7 +125,7 @@ public abstract class BaseToolBarActivity extends BaseActivity{
      * 自定义右上角图标
      * @param resId
      */
-    protected void setToolBarMenu(int resId) {
+    protected void setToolBarRightTop(int resId) {
         if(mToolBar != null) {
             ImageView imageView = mToolBar.findViewById(R.id.img_toolbar_right_top);
             imageView.setImageResource(resId);
