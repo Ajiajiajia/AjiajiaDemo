@@ -14,12 +14,13 @@
         android:text="我的第一个dialog"/>
 
     <RadioGroup
-        android:layout_below="@id/dialog_test"
+        android:id="@+id/radioDroup_chechBox"
         android:layout_width="144dp"
         android:layout_height="131dp"
+        android:layout_below="@id/dialog_test"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="165dp"
-        tools:layout_editor_absoluteY="65dp"
-        tools:ignore="MissingConstraints">
+        tools:layout_editor_absoluteY="65dp">
 
         <CheckBox
             android:id="@+id/checkBox2"
@@ -44,10 +45,55 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:checked="false"
             android:text="篮球"
             tools:layout_editor_absoluteX="54dp"
             tools:layout_editor_absoluteY="98dp" />
+
     </RadioGroup>
+
+    <RadioButton
+        android:layout_below="@id/radioDroup_chechBox"
+        android:id="@+id/radiobutton"
+        android:text="radioButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/img_test_tmd"
+        android:layout_below="@id/radiobutton"
+        android:background="@drawable/menu_github"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/radioDroup_chechBox"
+        android:layout_alignRight="@+id/radioDroup_chechBox"
+        android:layout_below="@+id/img_test_tmd"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="19dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/progressBar"
+        android:layout_alignStart="@+id/progressBar"
+        android:layout_below="@+id/progressBar"
+        android:layout_marginTop="26dp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 
 </RelativeLayout>
