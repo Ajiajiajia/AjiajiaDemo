@@ -1,10 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="258dp"
+        android:layout_height="209dp"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="0dp" />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="前端" />
-</android.support.constraint.ConstraintLayout>
+        android:layout_below="@id/timePicker"
+        android:id="@+id/txt_showtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <CalendarView
+        android:layout_below="@id/txt_showtime"
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="270dp" />
+
+
+    <TextView
+        android:layout_below="@id/calendarView"
+        android:id="@+id/txt_showdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txt_introduce"
+        android:layout_below="@id/txt_showdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+        <!--android:text="@string/introduce"-->
+        <!--android:textColor="@color/introduce_color"-->
+</RelativeLayout>

@@ -8,7 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.heaijia.ajiajia.R;
-import com.example.heaijia.ajiajia.activity.duanmodel.ui.fragment.model.LostFoundTaskResponse;
 import com.example.heaijia.ajiajia.base.Activity.BaseFragment;
 
 import java.util.ArrayList;

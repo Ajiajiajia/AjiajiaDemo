@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Ajiajia</string>
     <string name="empty"></string>
+
+    <string name="introduce">一个老程序员的忠告：不要一辈子靠技术生存</string>
+    <color name="introduce_color">#166666</color>
 </resources>
