@@ -13,12 +13,12 @@
             android:text="PM_Fragment"
             android:gravity="center_horizontal"/>
 
-        <android.support.v7.widget.RecyclerView
+        <ListView
             android:id="@+id/rec_pm_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-        </android.support.v7.widget.RecyclerView>
+        </ListView>
 
 
     </android.support.v4.widget.SwipeRefreshLayout>

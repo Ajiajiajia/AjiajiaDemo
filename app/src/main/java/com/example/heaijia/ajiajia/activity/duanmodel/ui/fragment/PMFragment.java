@@ -6,6 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 
 import com.example.heaijia.ajiajia.R;
 import com.example.heaijia.ajiajia.base.Activity.BaseFragment;
@@ -33,8 +34,7 @@ public class PMFragment extends BaseFragment {
     SwipeRefreshLayout swipeRefreshLayoutPm;
     Unbinder unbinder;
 
-    private List<BaseFragment> mUIList;
-
+    private String[] mPMList={"Apple","Banana","Orange","Watermelon","Pear","Grape","Pineapple","Strawberry","Cherry","Mango"};
     @Override
     protected int getLayoutId() {
         return R.layout.fragment_pm_model;
@@ -43,11 +43,17 @@ public class PMFragment extends BaseFragment {
 
     @Override
     protected void initVariable() {
-        mUIList=new ArrayList<>();
     }
 
     @Override
     protected void initView() {
+
+
+        ArrayAdapter<String> adapter=new ArrayAdapter<String>(getActivity().getApplicationContext(),);
+//        recPmList.setAdapter(adapter);
+
+//        recPmList.setAdapter(adapter);
+
 
     }
 
