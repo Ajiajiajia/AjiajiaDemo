@@ -4,4 +4,13 @@
 
     <string name="introduce">一个老程序员的忠告：不要一辈子靠技术生存</string>
     <color name="introduce_color">#166666</color>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="menu_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 </resources>

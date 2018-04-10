@@ -143,12 +143,12 @@ public class AndroidActivity extends BaseNoBarActivity {
             }
         });
 
-        ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
-            @Override
-            public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
-                Toast.makeText(AndroidActivity.this,ratingBar.getNumStars(),Toast.LENGTH_SHORT).show();
-            }
-        });
+//        ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
+//            @Override
+//            public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
+//                Toast.makeText(AndroidActivity.this,ratingBar.getNumStars(),Toast.LENGTH_SHORT).show();
+//            }
+//        });
 
 
 

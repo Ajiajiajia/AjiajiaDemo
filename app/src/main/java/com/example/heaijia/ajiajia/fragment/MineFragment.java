@@ -12,7 +12,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.heaijia.ajiajia.R;
-import com.example.heaijia.ajiajia.activity.duanmodel.ui.UIActivity;
+import com.example.heaijia.ajiajia.activity.MIneActivity.BroadcastActivity;
 import com.example.heaijia.ajiajia.base.Activity.BaseFragment;
 
 import butterknife.BindView;
@@ -29,12 +29,17 @@ import butterknife.Unbinder;
 public class MineFragment extends BaseFragment {
 
 
-
     Unbinder unbinder;
     @BindView(R.id.btn_goto_baidu)
     Button btnGotoBaidu;
     @BindView(R.id.btn_goto_message)
     Button btnGotoPhone;
+    @BindView(R.id.spinnerActivity)
+    Button spinnerActivity;
+    @BindView(R.id.btn_Broadcast)
+    Button btnBroadcast;
+    @BindView(R.id.btn_fragment)
+    Button btnFragment;
 
     @Override
     protected int getLayoutId() {
@@ -80,9 +85,9 @@ public class MineFragment extends BaseFragment {
     @OnClick(R.id.btn_goto_baidu)
     public void onBtnGotoBaiduClicked() {
 
-        Intent openBaidu=new Intent();
+        Intent openBaidu = new Intent();
         openBaidu.setAction(Intent.ACTION_VIEW);
-        Uri baiduAdress=Uri.parse("https://www.baidu.com/");
+        Uri baiduAdress = Uri.parse("https://www.baidu.com/");
         openBaidu.setData(baiduAdress);
         startActivity(openBaidu);
 
@@ -92,7 +97,7 @@ public class MineFragment extends BaseFragment {
     @OnClick(R.id.btn_goto_message)
     public void onBtnGotoPhoneClicked() {
 
-        Toast.makeText(getActivity(),"此功能暂时无法使用",Toast.LENGTH_SHORT).show();
+        Toast.makeText(getActivity(), "此功能暂时无法使用", Toast.LENGTH_SHORT).show();
 
 //        Intent openMessage=new Intent();
 //        openMessage.setAction(Intent.ACTION_SEND);
@@ -105,10 +110,27 @@ public class MineFragment extends BaseFragment {
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
 
-        inflater.inflate(R.menu.menu_corner,menu);
+        inflater.inflate(R.menu.menu_corner, menu);
         super.onCreateOptionsMenu(menu, inflater);
     }
 
+//
+//    @OnClick(R.id.spinnerActivity)
+//    public void onViewClicked() {
+//        Intent recActivity = new Intent(getActivity(), RecActivity.class);
+//        startActivity(recActivity);
+//    }
 
 
+    @OnClick(R.id.btn_Broadcast)
+    public void onBroadcastClicked() {
+        Intent broadcastActivity = new Intent(getActivity(), BroadcastActivity.class);
+        startActivity(broadcastActivity);
+    }
+
+    @OnClick(R.id.btn_fragment)
+    public void onFragmentClicked() {
+
+
+    }
 }
