@@ -22,8 +22,6 @@ import butterknife.OnClick;
 public class FragActivity extends BaseActivity {
 
 
-
-
     @Override
     protected int getLayoutId() {
         return R.layout.activity_frag;
