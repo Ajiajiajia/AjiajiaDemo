@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <Button
         android:textColor="@color/txt_blue"
@@ -12,6 +13,21 @@
         android:layout_gravity="center_horizontal"/>
 
 
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start_Webview"
+        android:id="@+id/btn_webview"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_ie_webview"
+        android:text="IE_star_Url"
+        android:layout_gravity="center_horizontal"/>
 
 
 

@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.heaijia.ajiajia">
+
+
+    <!--网络权限-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ajdemo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -24,7 +30,13 @@
         <activity android:name=".activity.duanmodel.houduan.BEActivity"/>
         <activity android:name=".activity.duanmodel.qiandaun.FEActivity"/>
         <activity android:name=".activity.duanmodel.houduan.limb.LyParamsActivity" />
+        <activity android:name=".activity.duanmodel.houduan.limb.WebviewActivity" />
+        <activity android:name=".activity.duanmodel.houduan.limb.DirectUrlActivity" />
+
+
+
         <activity android:name=".activity.MIneActivity.BroadcastActivity" />
+
 
 
     </application>
